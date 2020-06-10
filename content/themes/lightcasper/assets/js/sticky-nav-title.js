@@ -17,11 +17,11 @@
 
 (function (window, document) {
     // set up Casper as a global object
-    if (!window.Casper) {
-        window.Casper = {};
+    if (!window.lightcasper) {
+        window.lightcasper = {};
     }
 
-    window.Casper.stickyNavTitle = function stickyNavTitle(options) {
+    window.lightcasper.stickyNavTitle = function stickyNavTitle(options) {
         var nav = document.querySelector(options.navSelector);
         var title = document.querySelector(options.titleSelector);
 
